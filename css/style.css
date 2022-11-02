@@ -1,0 +1,928 @@
+
+
+/* font google */
+/* font-family: 'Poppins', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: red;
+    --main-transition: all .5s;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+
+
+/* start user all */
+.user {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+.user .container {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* .none {
+    display: none;
+} */
+
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* bast background-color 
+background-color: #15212d;
+
+
+
+*/
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 1 */
+
+.user-1 {
+    font-family: 'Poppins', sans-serif;;
+    background: #222327;
+}
+
+.user-1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-1 .list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.user-1 .list .user {
+    position: relative;
+    background: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.user-1 .list .user .imgBx {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.user-1 .list .user .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-1 .list .user .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-1 .list .user .details h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.1em;
+}
+
+.user-1 .list .user .details p {
+    font-weight: 500;
+    font-size: .8em;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: capitalize;
+}
+
+.user-1 .navigation {
+    position: relative;
+    width: 40px;
+    height: 70px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-1 .navigation.active {
+    width: 200px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-1 .navigation span {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #222327;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #222327;
+    transition: var(--main-transition);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-1 .navigation span:nth-child(1) {
+    transform: translateY(-12px);
+    -webkit-transform: translateY(-12px);
+    -moz-transform: translateY(-12px);
+    -ms-transform: translateY(-12px);
+    -o-transform: translateY(-12px);
+}
+
+.user-1 .navigation span:nth-child(3) {
+    transform: translateY(12px);
+    -webkit-transform: translateY(12px);
+    -moz-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    -o-transform: translateY(12px);
+}
+
+.user-1 .navigation.active span {
+    width: 50px;
+    height: 50px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-1 .navigation.active span:nth-child(1) {
+    transform: translateX(-60px);
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+}
+
+.user-1 .navigation.active span:nth-child(3) {
+    transform: translateX(60px);
+    -webkit-transform: translateX(60px);
+    -moz-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    -o-transform: translateX(60px);
+}
+
+.user-1 .navigation.active span.active i {
+    color: red;
+}
+
+.user-1 .navigation span i {
+    font-size: 0em;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-1 .navigation.active span i {
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.user-1 .navigation.active span:hover {
+    background: #29fd53;
+}
+
+.user-1 .navigation.active span:hover i {
+    color: #222327;
+}
+
+
+
+
+/* end user 1 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 2 */
+.user-2 {
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+.user-2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-2 .box-1 {
+    display: none;
+}
+
+.user-2 .box {
+    text-align: center;
+    position: relative;
+}
+
+.user-2 .box_2 {
+    position: relative;
+    left: 50%;
+    width: 1000px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.user-2 .box_2 .text {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    overflow: hidden;
+}
+
+.user-2 .box_2 .text span {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-2 .box_2 .text.text-animation1 {
+    color: #fff;
+    background-color: red;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8), -2px -2px 3px rgba(255, 255, 255, 0.5);
+    transform-origin: left;
+    left: 0;
+    transform: perspective(800px) rotateY(-64deg);
+    -webkit-transform: perspective(800px) rotateY(-64deg);
+    -moz-transform: perspective(800px) rotateY(-64deg);
+    -ms-transform: perspective(800px) rotateY(-64deg);
+    -o-transform: perspective(800px) rotateY(-64deg);
+}
+
+.user-2 .box_2 .text.text-animation2 {
+    color: red;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8), -2px -2px 3px rgba(255, 255, 255, 0.5);
+    transform-origin: right;
+    right: 0;
+    transform: perspective(800px) rotateY(64deg);
+    -webkit-transform: perspective(800px) rotateY(64deg);
+    -moz-transform: perspective(800px) rotateY(64deg);
+    -ms-transform: perspective(800px) rotateY(64deg);
+    -o-transform: perspective(800px) rotateY(64deg);
+}
+
+.user-2 .box_2 .text.text-animation1 span {
+    position: absolute;
+    animation: u2animate1 10s linear infinite;
+    -webkit-animation: u2animate1 10s linear infinite;
+}
+
+@keyframes u2animate1 {
+    0% {
+        left: 200%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.user-2 .box_2 .text.text-animation2 span {
+    position: absolute;
+    animation: u2animate2 10s linear infinite;
+    -webkit-animation: u2animate2 10s linear infinite;
+}
+
+@keyframes u2animate2 {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -200%;
+    }
+}
+
+.user-2 .box_2 .text span img {
+    max-width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* end user 2 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 3 */
+.user-3 {
+    font-family: 'Poppins', sans-serif;
+    background: #162052;
+}
+
+.user-3 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-3 .box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user-3 .box::before {
+    content: "";
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    animation: u3animate 4s linear infinite;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    -webkit-animation: u3animate 4s linear infinite;
+}
+
+.user-3 .box:hover:before {
+    inset: -20px 0px;
+}
+
+@keyframes u3animate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+.user-3 .box::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background: #162052;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user-3 .box .content {
+    position: absolute;
+    inset: 30px;
+    border: 6px solid #070a1c;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user-3 .box .content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 3;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-3 .box:hover .content img {
+    opacity: 0;
+}
+
+.user-3 .box .content h2 {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.user-3 .box .content h2 span {
+    display: inline-block;
+    font-weight: 300;
+    font-size: .75em;
+}
+
+.user-3 .box .content a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    transition: var(--main-transition);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-3 .box .content a:hover {
+    letter-spacing: .2em;
+}
+
+
+/* end user 3 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 4 */
+
+.user-4 {
+    background-color: #353535;
+}
+
+.user-4 .cont {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    clip-path: circle(100% at 40% 50%);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.user-4 .cont:nth-child(1) {
+    background-color: rgb(196, 10, 39);
+}
+
+.user-4 .cont:nth-child(2) {
+    background-color: rgb(212, 74, 57);
+}
+
+.user-4 .cont.circle:nth-child(1) {
+    z-index: 1;
+    clip-path: circle(12% at 40% 50%);
+}
+
+.user-4 .cont.circle:nth-child(2) {
+    z-index: 1;
+    clip-path: circle(12% at 60% 50%);
+}
+
+.user-4 .model-img {
+    position: absolute;
+    height: 100vh;
+    left: 50%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.user-4 .model-img.circle {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(.45);
+    -webkit-transform: translate(-50%, -50%) scale(.45);
+    -moz-transform: translate(-50%, -50%) scale(.45);
+    -ms-transform: translate(-50%, -50%) scale(.45);
+    -o-transform: translate(-50%, -50%) scale(.45);
+}
+
+.user-4 .cont:nth-child(1) .model-img.circle {
+    left: 40%;
+}
+
+.user-4 .cont:nth-child(2) .model-img.circle {
+    left: 62%;
+}
+
+.user-4 .content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.user-4 .content.circle {
+    opacity: 0;
+} 
+
+.user-4 .heading {
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.user-4 .heading span {
+    font-size: 50px;
+    line-height: 50px;
+    display: block;
+}
+
+.user-4 .sparator {
+    width: 25%;
+    margin: 40px 0;
+    border-color: #fff;
+}
+
+.user-4 .para {
+    font-size: 16px;
+    width: 60%;
+    font-weight: 400;
+}
+
+.user-4 .btn {
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-4 .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.user-4 .toggle-btn {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9;
+    display: none;
+}
+
+.user-4 .toggle-btn.display {
+    display: block;
+}
+
+.user-4 .toggle-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.user-4 .toggle-btn span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -moz-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -o-transform: translate(-50%, -50%) rotate(-45deg);
+} 
+
+.user-4 .scale-up {
+    animation: u4scale-up 1.5s forwards 1;
+    -webkit-animation: u4scale-up 1.5s forwards 1;
+}
+
+@keyframes u4scale-up {
+    0% {
+        transform: translate(-50%, -50%) scale(0.45);
+        -webkit-transform: translate(-50%, -50%) scale(0.45);
+        -moz-transform: translate(-50%, -50%) scale(0.45);
+        -ms-transform: translate(-50%, -50%) scale(0.45);
+        -o-transform: translate(-50%, -50%) scale(0.45);
+}
+    20% {
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+}
+    100% {
+        left: 80%;
+        bottom: -10%;
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+}
+}
+
+.user-4 .scale-down {
+    animation: u4scale-down 1.5s forwards 1;
+    -webkit-animation: u4scale-down 1.5s forwards 1;
+}
+
+@keyframes u4scale-down {
+    0% {
+        left: 80%;
+        bottom: -10%;
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+}
+    80% {
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+}
+    100% {
+        transform: translate(-50%, -50%) scale(0.45);
+        -webkit-transform: translate(-50%, -50%) scale(0.45);
+        -moz-transform: translate(-50%, -50%) scale(0.45);
+        -ms-transform: translate(-50%, -50%) scale(0.45);
+        -o-transform: translate(-50%, -50%) scale(0.45);
+}
+}
+
+
+
+
+/* end user 4 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 5 */
+
+
+
+/* end user 5 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 6 */
+
+
+
+/* end user 6 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 7 */
+
+
+
+/* end user 7 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 8 */
+
+
+
+/* end user 8 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 9 */
+
+
+
+/* end user 9 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 10 */
+
+
+
+/* end user 10 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start user 11 */
+
+
+
+/* end user 11 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
